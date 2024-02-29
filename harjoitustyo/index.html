@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="omat nettisivut">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Eeva Heikkilä">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eeva Heikkilä - Etusivu</title>
+<link rel="icon" type="image/png" href="../harjoitustyo/images_web/web_logo2.0.png"> <!--logo välilehdille-->
+<script src="https://kit.fontawesome.com/8460bd74f2.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans&family=Secular+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <article class="page">
+            <!--page alkaa-->
+            <!--menu alkaa-->
+        <nav>
+                <ul>
+                    <li style="margin-left:15px; float:left; padding-left: 15px; padding-right: 15px;"><p>Eeva Heikkilä</p></li>
+                    <li><a href="portfolio.html"><i class="fa-solid fa-book"></i> PORTFOLIO</a></li>
+                    <li><a href="harrastukset.html"><i class="fa-solid fa-paper-plane"></i> HARRASTUKSET</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> ETUSIVU</a></li>
+                </ul>
+        </nav>
+            <!--menu päättyy-->
+            <!--header alkaa-->
+        <div class = "image" style="background-size: cover;">
+            <header>
+            <h1 class="teksti_josefin" style="font-weight: 500;">Eeva Heikkilä</h1>
+            <p style="font-size: medium; font-weight: 500;">Engineer in the making</p>
+            </header>
+        </div>
+            <!--header päättyy-->
+            <!--section1 alkaa-->
+        <section>
+            <section class="content_left">
+                <img src="../harjoitustyo/images_web/omakuva.jpg" alt="kuva" width="100%" height="auto">
+            </section>
+            <section class="content_right">
+                <h2 class="teksti_josefin" style="font-weight: 500; font-size: 1.8em; text-align: center;">Minusta <i class="fa-solid fa-person-through-window fa-2x"></i></h2>
+                <h4>Opiskeluista</h4>
+                    <p>Opiskelen Jyväskylän ammattikorkeakoulussa (<a href="https://www.jamk.fi/fi" target="_blank">Jamk</a>). Teknologiayksikössä, IT-istituutissa <b>Tieto- ja viestintätekniikan tutkinto-ohjelmassa</b>. Tavoitteeni on valmistua insinööriksi neljässä vuodessa.</p>
+                    <br>
+                <h4>Minä itse</h4>
+                    <p>Olen luova, aktiivinen ja sosiaalinen.</p>
+                    <p>Työntekijänä olen ahkera, nopea oppimaan ja helposti sopeutuva. Tulen toimeen erilaisten ihmisten kanssa. Minulla on paljon erilaista työkokemusta erilaisilta aloilta. Niistä lisää harrastuksissa ja portfoliossa, joihin löydät pääsyn sivun alusta tai lopusta.</p>
+                    <br>
+                    <p>Opiskelijana olen erittäin motivoitunut. Vaikka lähtötaso oli nolla, olen päässyt hyvään vauhtiin ja sisäistänyt uudet ja vaikeatkin asiat nopeaa tahtia.</p>
+                    <br>
+                <h4>Vapaa-aika ja harrastukset</h4>
+                    <p>Vapaa-aikaani kuuluu luova kirjoittaminen, erilaiset käsityöt ja piirtäminen. Elämääni kuuluu koira, jonka kanssa seikkailemme. Lisäksi kaikki sivuillani esiintyvät kuvat ovat omaa tuotostani. Pidän uusien asioiden oppimisesta ja opiskelusta.</p>
+                    <br>
+            </section>
+        </section>
+            <!--section1 päättyy-->
+            <!--"lue lisää" -osio alkaa-->
+            <div id="content">
+                <div id="content_left">
+                    <h2 class="teksti_josefin" style="font-weight: 500; font-size: 1.4em;">Portfolio</h2>
+                    <a href="portfolio.html" class="button">Lue lisää</a>
+                </div>
+                <div id="content_middle">
+                    <h2 class="teksti_josefin" style="font-weight: 500; font-size: 1.4em;">Harrastukset</h2>
+                    <a href="harrastukset.html" class="button">Lue lisää</a>
+                </div>
+                <div id="content_right">
+                    <h2 class="teksti_josefin" style="font-weight: 500; font-size: 1.4em;">Dokumentointi</h2>
+                    <a href="../harjoitustyo/dokumentointi/dokumentointi.html" target="_blank" class="button">Lue lisää</a>
+                </div>
+            </div>
+            <!--"lue lisää" -osio päättyy-->
+            <!--footer alkaa-->
+            <footer>
+                <address> <!--linkki sähköpostiin-->
+                    <a style="text-align: center; color:white;" href="mailto:AE7921@student.jamk.fi">AE7921@student.jamk.fi</a>
+                </address>Eeva Heikkilä</footer>
+            <!--footer-->
+    </article>
+            <!--page päättyy-->
+            <!--navigointipalkki liimataan-->
+    <script>
+        const nav = document.querySelector('nav');
+        const navOffset = nav.offsetTop;
+        window.addEventListener('scroll',()=> {
+            if (window.pageYOffset >= navOffset){
+                nav.classList.add('sticky');
+            } else {
+                nav.classList.remove('sticky');
+            }
+        })
+    </script>
+</body>
+</html>

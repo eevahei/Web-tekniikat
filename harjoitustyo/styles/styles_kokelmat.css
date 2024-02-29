@@ -1,0 +1,58 @@
+/*Omat kokoelmat, blog layout */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+  
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+  
+.vasen_column {   
+    float: left;
+    width: 75%;
+}
+  
+
+.oikea_column {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+  
+  
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+     overflow: hidden;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+  
+@media screen and (max-width: 550px) {
+    .vasen_column, .oikea_column {   
+      width: 100%;
+      padding: 0;
+    }
+}

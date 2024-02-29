@@ -1,0 +1,62 @@
+/* NETTISIVUJEN STYLES.CSS */
+/* Banner, jossa otsikko */
+#banner {
+    background-color: rgb(226, 195, 195);
+    color: rgb(155, 121, 121);
+    padding: 100px;
+    text-align: center;
+    margin:0;
+} 
+/* Linkkinauha */
+.nav {
+    background-color:rgb(236, 217, 208);
+    color: rgb(155, 121, 121);
+    margin: 0px;
+    padding: 30px;
+    font-size: 1.2em;
+}
+/* Väliotsikoiden jutut */
+div {
+    border: 1px rgb(109, 69, 69);
+    background-color: rgb(190, 154, 154);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 3px;
+  }
+/* Sivun asetukset */
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(155, 121, 121);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Tekstin ja listan asetukset */
+p, ul {
+    font-size: 1.1em;
+    text-align: left;
+    color:rgb(228, 200, 193);
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+/* Otsikon ja sivuotsikoiden asettelut */
+h1, h2 {color:rgb(230, 230, 198)}
+
+/* Linkkien värit */
+a:link {
+  color: rgb(192, 141, 83);
+}
+a:visited {
+  color: rgb(59, 25, 11);
+}
+a:hover {
+  color: rgb(139, 85, 85);
+}
+a:active {
+    color:darkolivegreen;
+}
